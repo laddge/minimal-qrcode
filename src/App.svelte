@@ -90,7 +90,9 @@
     </div>
     <h2 class="text-xl font-bold mb-4">Result</h2>
     <div class="mb-4">
-      <img src={dataURL} alt="generated" />
+      {#if dataURL}
+        <img src={dataURL} alt="generated" />
+      {/if}
     </div>
   </div>
 </main>
